@@ -1,0 +1,7 @@
+recientemente se creo el proyecto 10/10/2026
+se configuro la conexion a la BD y se obtubo conexion exitosa10/10/2026
+se creo el manifiesto y el service worker falto integrarlo al layout principal13/10/2026
+se crearon y configuraron los modelos de datos 16/10/2026
+se crearon las migraciones de la BD 18/10/2026.
+se integro el manifiesto y el service worker ala app 18/10/2026
+se creo  la ventana principal y el incio de sesion 18/10/2026
