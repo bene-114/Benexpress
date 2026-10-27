@@ -68,9 +68,9 @@ class AuthController extends Controller
             'role' => 'required|in:cliente,proveedor',
             'name' => 'required|string|max:100',
             'email' => 'required|email|unique:users,email',
-            'phone' => 'required|int|max:10',
+            'phone' => 'required|string|max:20',
             'password' => 'required|min:6|confirmed',
-            'ine_image' => 'required|image|max:5120', // Máx 5MB
+            'ine_image' => 'nullable|image|max:5120', // Máx 5MB
         ]);
 
         // Manejo de la subida de INE
