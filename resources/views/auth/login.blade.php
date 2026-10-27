@@ -76,7 +76,8 @@
             Recordarme
         </label>
         <a href="{{ route('password.request') }}" class="text-sm text-indigo-600 hover:underline">¿Olvidaste tu contraseña?</a>
-    </div>    
+    </div>
+
     <button type="submit" class="w-full bg-brand-dark hover:bg-gray-800 text-white font-bold py-2.5 rounded-lg text-sm transition mb-6 shadow">
         Iniciar sesión
     </button>
