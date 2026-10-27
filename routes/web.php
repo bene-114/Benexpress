@@ -8,6 +8,7 @@ use App\Http\Controllers\CartController;
 use App\Http\Controllers\StoreController;
 use App\Http\Controllers\VendorProductController;
 use App\Http\Controllers\AdminController;
+use App\Http\Controllers\Auth\PasswordResetController;
 
 // Ventana 1: Página Principal
 Route::get('/', [HomeController::class, 'index'])->name('home');
@@ -64,3 +65,12 @@ Route::get('/tiendas/{id}', [StoreController::class, 'show'])->name('stores.show
 // Rutas Informativas Estáticas
 Route::view('/nosotros', 'pages.about')->name('about');
 Route::view('/contacto', 'pages.contact')->name('contact');
+
+
+
+// Rutas de Recuperación de Contraseña
+Route::get('/forgot-password', [PasswordResetController::class, 'create'])->name('password.request');
+Route::post('/forgot-password', [PasswordResetController::class, 'store'])->name('password.email');
+
+Route::get('/reset-password/{token}', [PasswordResetController::class, 'edit'])->name('password.reset');
+Route::post('/reset-password', [PasswordResetController::class, 'update'])->name('password.update');
